@@ -54,7 +54,7 @@ function keyboardClick(value) {
 
 function calculateResult() {
     try {
-        result.innerHTML = 'Result: ' + eval(toJs(expression.innerHTML))
+        result.innerHTML = 'Result: ' + eval(toJs(expression.innerText))
     } catch {
         result.innerHTML = '<span class="error">Invalid input!</span>'
     }
@@ -62,5 +62,6 @@ function calculateResult() {
 
 //This function will convert human operators to js operators
 function toJs(expString) {
+    console.log(expString)
     return expString.replaceAll('×', '*').replaceAll('÷', '/')
 }
