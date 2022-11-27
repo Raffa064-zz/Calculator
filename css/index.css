@@ -1,0 +1,87 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(135deg, #598937, #0E3413)
+}
+
+.calculator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(max(-50%, -40vh));
+    width: calc(max(8vw, 8vh) * 4 + 20px);
+    padding: 10px;
+    background: #101010;
+    border-radius: 10px;
+    box-shadow: inset 2px 3px 4px #A0C4AA42;
+}
+
+.display {
+    width: 100%;
+    background: #151515;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.display #expression {
+    display: block;
+    width: 100%;
+    float: right;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: right;
+    color: #aaa;
+    font-size: 2rem;
+}
+
+.display #result {
+    display: block;
+    text-align: right;
+    color: #89A687;
+    font-size: 1rem;
+}
+
+.error {
+    color: #FE5A5A;
+}
+
+.keyboard button {
+    width: max(8vw, 8vh);
+    height: max(5vw, 5vh);
+    border: none;
+    background: #252525;
+    color: #aaa;
+    transition: 0.2s;
+}
+
+.keyboard button:active {
+    background: #303030;
+}
+
+.keyboard > div > button:last-child {
+    background: #303030;
+    color: #46C562;
+    font-weight: bolder;
+}
+
+.keyboard > div > button:last-child:active {
+    background: #454545;
+    color: #0f8;
+}
+
+.keyboard > div:last-child > button:first-child {
+    border-bottom-left-radius: 10px; 
+}
+
+.keyboard > div:last-child > button:last-child {
+    border-bottom-right-radius: 10px;
+}

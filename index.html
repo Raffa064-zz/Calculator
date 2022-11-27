@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="display">
+            <span id="expression"><span class="placeholder">Calculator</span></span>
+            <span id="result">Dinamic results!</span>
+        </div>
+        <div class="keyboard">
+            <div>
+                <button onclick="keyboardClick('CLEAR')">CLEAR</button><button onclick="keyboardClick('(')">(</button><button onclick="keyboardClick(')')">)</button><button onclick="keyboardClick('+')">+</button>
+            </div>
+            <div>
+                <button onclick="keyboardClick('1')">1</button><button onclick="keyboardClick('2')">2</button><button onclick="keyboardClick('3')">3</button><button onclick="keyboardClick('-')">-</button>
+            </div>
+            <div>
+                <button onclick="keyboardClick('4')">4</button><button onclick="keyboardClick('5')">5</button><button onclick="keyboardClick('6')">6</button><button onclick="keyboardClick('&times;')">&times;</button>
+            </div>
+            <div>
+                <button onclick="keyboardClick('7')">7</button><button onclick="keyboardClick('8')">8</button><button onclick="keyboardClick('9')">9</button><button onclick="keyboardClick('&divide;')">&divide;</button>
+            </div>
+            <div>
+                <button onclick="keyboardClick('.')">.</button><button onclick="keyboardClick('0')">0</button><button onclick="keyboardClick('DEL')">DEL</button><button onclick="keyboardClick('=')">=</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/index.js"></script>
+</body>
+
+</html>
